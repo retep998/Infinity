@@ -11,10 +11,10 @@ template <typename T>
 class Vector2 : public Vector<2, T> {
 public:
     T& X() {
-        return Value[0];
+        return this->Value[0];
     }
     T& Y() {
-        return Value[1];
+        return this->Value[1];
     }
 };
 typedef Vector2<uint64_t> Vector2u64;
