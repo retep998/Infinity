@@ -11,6 +11,7 @@
 #include <map>
 #include <fstream>
 #include <memory>
+#include <random>
 using namespace std;
 using namespace std::chrono;
 
@@ -18,7 +19,7 @@ using namespace std::chrono;
 #include <GL/glew.h>
 
 //SFML
-#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
 //Our stuff
 #include "Vector.h"

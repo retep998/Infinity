@@ -3,6 +3,8 @@ namespace Window {
     sf::Window* Win;
     void Init() {
         Win = new sf::Window(sf::VideoMode(800, 600, 32), "InfinitySquared", sf::Style::Default);
+        Win->setVerticalSyncEnabled(false);
+        View::Resize(Win->getSize().x, Win->getSize().y);
         glewInit();
     }
     void HandleEvents() {

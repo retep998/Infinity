@@ -19,3 +19,10 @@ void Program::Link() {
 void Program::Use() {
    glUseProgram(p);
 }
+void Program::BindAttrib(GLuint index, string name) {
+    glBindAttribLocation(p, index, name.c_str());
+    glEnableVertexAttribArray(index);
+}
+GLint Program::UniformLoc(string name) {
+    return glGetUniformLocation(p, name.c_str());
+}
