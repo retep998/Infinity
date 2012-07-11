@@ -5,7 +5,8 @@ namespace Game {
         Time::Init();
         Window::Init();
         Graphics::Init();
-        Chunk* c = new Chunk();;
+        Chunk::Init();
+        Chunk* c = new Chunk();
         while (!Over) {
             Time::Update();
             Window::HandleEvents();

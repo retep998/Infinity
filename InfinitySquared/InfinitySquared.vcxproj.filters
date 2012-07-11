@@ -15,7 +15,7 @@
     </Filter>
     <Filter Include="Shader Files">
       <UniqueIdentifier>{73e3d26e-cccf-4843-a546-86e53a7794c1}</UniqueIdentifier>
-      <Extensions>.vert;.geom;.frag</Extensions>
+      <Extensions>.glsl</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +44,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -75,5 +81,19 @@
     <ClInclude Include="Time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\ChunkFrag.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="ChunkVert.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

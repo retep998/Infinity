@@ -2,7 +2,7 @@
 namespace Window {
     sf::Window* Win;
     void Init() {
-        Win = new sf::Window(sf::VideoMode(800, 600, 32), "InfinitySquared", sf::Style::Default, sf::ContextSettings(0, 0, 0, 3, 3));
+        Win = new sf::Window(sf::VideoMode(800, 600, 32), "InfinitySquared", sf::Style::Default);
         glewInit();
     }
     void HandleEvents() {

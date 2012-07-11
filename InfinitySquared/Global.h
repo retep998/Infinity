@@ -10,6 +10,7 @@
 #include <chrono>
 #include <map>
 #include <fstream>
+#include <memory>
 using namespace std;
 using namespace std::chrono;
 

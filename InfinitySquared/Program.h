@@ -1,8 +1,9 @@
 class Program {
 public:
-    Program();
+    void Create();
     void Attach(Shader);
     void Link();
+    void Use();
 private:
     GLuint p;
 };
