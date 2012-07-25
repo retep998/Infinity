@@ -5,17 +5,22 @@ public:
         return Value[n];
     }
 protected:
-    T Value[N];
+    union {
+        T Value[N];
+    };
 };
 template <typename T>
-class Vector2 : public Vector<2, T> {
+class Vector2 {
 public:
-    T& X() {
-        return this->Value[0];
+    T& operator[](int n) {
+        return Value[n];
     }
-    T& Y() {
-        return this->Value[1];
-    }
+    union {
+        T Value[2];
+        struct {
+            T X, Y;
+        };
+    };
 };
 typedef Vector2<uint64_t> Vector2u64;
 typedef Vector2<uint32_t> Vector2u32;

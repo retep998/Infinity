@@ -81,8 +81,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Block.cpp" />
-    <ClCompile Include="Chunk.cpp" />
+    <ClCompile Include=".\World.cpp" />
+    <ClCompile Include="Buffer.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="Main.cpp">
@@ -97,8 +97,8 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Block.h" />
-    <ClInclude Include="Chunk.h" />
+    <ClInclude Include=".\World.h" />
+    <ClInclude Include="Buffer.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Graphics.h" />

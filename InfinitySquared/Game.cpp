@@ -6,14 +6,13 @@ namespace Game {
         Window::Init();
         Graphics::Init();
         View::Init();
-        Chunk::Init();
-        Chunk* c = new Chunk();
+        World::Init();
         while (!Over) {
             Time::Update();
             Window::HandleEvents();
             View::Update();
             Graphics::Clear();
-            c->Render();
+            World::Render();
             Window::Display();
             GLenum e = glGetError();
 		    switch (e) {
