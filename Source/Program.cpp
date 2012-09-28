@@ -1,4 +1,6 @@
 #include "Global.h"
+#include "Common.h"
+static char buf[0x1000];
 void Program::Create() {
     p = glCreateProgram();
 }
@@ -7,11 +9,8 @@ void Program::Attach(Shader s) {
 }
 void Program::Link() {
     glLinkProgram(p);
-    GLint len;
-	glGetProgramiv(p, GL_INFO_LOG_LENGTH , &len);
-    unique_ptr<GLchar> log(new GLchar[len]);
-	glGetProgramInfoLog(p, len, 0, log.get());
-	cout << log.get() << flush;
+	glGetProgramInfoLog(p, 0x1000, 0, buf);
+	Log << buf << flush;
     GLint linked;
     glGetProgramiv(p, GL_LINK_STATUS, &linked);
 	if (!linked) abort();
